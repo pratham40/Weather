@@ -14,7 +14,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.get(`https://weather-9yk0.onrender.com/weather?city=${city}`);
+      const res = await axios.get(`https://weather-backend-8ldr.onrender.com/weather?city=${city}`);
       setWeather({ ...res.data});
     } catch (err) {
       setError('City not found or network error.');
