@@ -17,7 +17,6 @@ router.get("/",async (req,res) => {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.OPENWEATHER_API_KEY}&units=metric`
     
         const response = await axios.get(url)
-        console.log(response.data.weather[0]);
         
         const {temp,humidity}=response.data.main
     
