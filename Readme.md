@@ -19,13 +19,19 @@ The Weather Dashboard is a web application designed to display real-time weather
     ```bash
     git clone https://github.com/pratham40/Weather.git
     ```
-2. Navigate to the project directory:
+2. Navigate to the client directory:
     ```bash
     cd client
     npm install
     npm start
     ```
-3. Open `http://localhost:3000/` in your browser to launch the application.
+3. Navigate to the server directory:
+    ```bash
+    cd server
+    npm install
+    npm start
+    ```
+4. Open `http://localhost:3000/` in your browser to launch the application.
 
 ## How to Use
 1. Enter a city name in the search bar.
