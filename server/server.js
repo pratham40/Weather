@@ -6,11 +6,9 @@ import weatherRoute from "./routes/weather.js";
 
 const app = express();
 
-app.use(cors({
-    origin:process.env.FRONTEND_URL,
-    credentials:true,
-    methods:"GET"
-}))
+app.use(express.static("build"))
+
+app.use(cors())
 
 app.use(express.json())
 
